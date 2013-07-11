@@ -25,12 +25,13 @@
  
  The default is `[UIColor lightGrayColor]`.
  */
-@property (nonatomic, strong) UIColor *placeholderTextColor;
+@property (nonatomic, strong) UIColor *placeholderTextColor UI_APPEARANCE_SELECTOR;
+
 /**
  The font of the placeholder.
  
  The default is `self.font`.
  */
-@property (nonatomic, strong) UIFont *placeholderFont;
+@property (nonatomic, strong) UIFont *placeholderFont UI_APPEARANCE_SELECTOR;
 
 @end
