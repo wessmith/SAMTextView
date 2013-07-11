@@ -101,7 +101,7 @@
 
 		// Draw the text
 		[self.placeholderTextColor set];
-		[self.placeholder drawInRect:rect withFont:self.font lineBreakMode:NSLineBreakByTruncatingTail alignment:self.textAlignment];
+		[self.placeholder drawInRect:rect withFont:self.placeholderFont lineBreakMode:NSLineBreakByTruncatingTail alignment:self.textAlignment];
 	}
 }
 
@@ -112,6 +112,7 @@
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textChanged:) name:UITextViewTextDidChangeNotification object:self];
 	
 	self.placeholderTextColor = [UIColor colorWithWhite:0.702f alpha:1.0f];
+    self.placeholderFont = self.font;
 }
 
 
